@@ -65,3 +65,23 @@ h2 p{
   text-decoration: none;
   text-align: center;
 }
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border: 0px;
+
+
+}
+
+.back-to-top a{
+  color: black;
+  text-decoration: none;
+}
+
+.cp-text{ 
+  color: rgba(0,0,0,.7); 
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
