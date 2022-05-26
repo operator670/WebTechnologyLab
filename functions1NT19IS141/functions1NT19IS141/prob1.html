@@ -1,0 +1,30 @@
+<!--  Write an arrow function that accepts an array of numbers as input and returns the average of those numbers.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prob1</title>
+</head>
+<body>
+    <script>
+
+    var sum=0;
+    var len=(Number(prompt("Enter len of array")));
+    var ar= [];
+    for(var i=0;i<len;i++){
+    ar.push(Number(prompt("Enter array elements:"+ (i+1))));
+    }
+ const average = (ar)=>{
+    for(var i=0;i<len;i++){
+    sum+=ar[i];
+    }
+    return sum/len;
+ }
+
+    document.write(average(ar)+" ");
+     
+    </script>
+</body>
+</html>

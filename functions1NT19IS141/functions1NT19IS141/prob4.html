@@ -1,0 +1,29 @@
+<!--  Write an arrow function that will take one parameter weight in Kg. This arrow function will convert Kg to Lbs. Formula is kg*2.2
+If LBS is > 150, then the function should return "obese"
+If LBS is between 100 to 150, the function should return "you are ok"
+If LBS is < 100, then the function should return "underweight"-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prob4</title>
+</head>
+<body>
+    <script>
+        const KgToLBS = (weightInKg)=>{
+            let lbs = weightInKg * 2.2;
+            if(lbs > 150)
+                return "obese";
+            if(lbs<100)
+                return "underweight";
+            return "you are ok";
+        }
+
+        const weightInKg = Number(prompt("Enter the weight in kg"));
+        document.write(KgToLBS(weightInKg));
+    </script>
+</body>
+</html>

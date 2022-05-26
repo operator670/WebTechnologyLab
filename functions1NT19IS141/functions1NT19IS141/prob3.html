@@ -1,0 +1,29 @@
+<!--  Write a JavaScript code to multiply each number in the array by 10 and return the result using the map() function with arrow notation.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prob3</title>
+</head>
+<body>
+    <script>
+
+
+        const myFunction = (num)=> {
+          return num * 10;
+        }
+
+        const numbers = [];
+
+        var len=(Number(prompt("Enter len of array")));
+        for(var i=0;i<len;i++){
+            numbers.push(Number(prompt("Enter array elements:"+ (i+1))));
+        }
+        const newArr = numbers.map(myFunction);
+
+        document.write(newArr);
+        </script>
+</body>
+</html>
