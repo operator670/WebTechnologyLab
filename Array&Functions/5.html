@@ -1,0 +1,30 @@
+<!-- 5.In the Martian land faraway, a new virus has evolved and is attacking the individuals at a fast pace. The scientists have figured out 
+    the virus composition, V. The big task is to identify the people who are infected. The sample of N people is taken to check if they are 
+    POSITIVE or NEGATIVE. A report is generated which provides the current blood composition B of the person. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus</title>
+</head>
+<body>
+    <script>
+       const array=[];
+       var size=prompt("Enter the number of samples");
+       for(let i=0;i<size;i++)
+       {
+           array[i]=prompt("Enter the sample "+(i+1));
+       }
+           for(let i=0;i< size;i++){
+               if(array[i] == 'v')
+               document.write("Positive &nbsp");
+               else
+               document.write("Negative &nbsp");
+           }
+        
+    </script>
+</body>
+</html>
