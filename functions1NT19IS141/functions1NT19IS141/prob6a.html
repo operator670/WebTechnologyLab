@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capial</title>
+</head>
+<body>
+    <script>
+
+    function firstupper(str)
+    {
+        var words = str.split(' ');
+        var aftercap = [];
+        for(var x = 0; x < words.length; x++){
+        aftercap.push(words[x].charAt(0).toUpperCase()+words[x].slice(1));
+    }
+    return aftercap.join(' ');
+    }
+    var a=prompt("Enter the text to convert first letter of every word to uppercase:");
+    document.write(firstupper(a));
+    </script>
+</body>
+</html>
