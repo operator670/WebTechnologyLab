@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique</title>
+</head>
+<body>
+    <script>
+        function u(string1){
+            var str = string1;
+            var uni="";
+            for(var x=0;x<str.length;x++){
+                if(uni.indexOf(str.charAt(x))==-1){
+                    uni += str[x];
+                }
+            }
+            return uni;
+        }
+        document.write(u("thequickbrownfoxjumpsoverthelazydog"));
+    </script>
+</body>
+</html>
